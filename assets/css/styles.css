@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px 30px 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    color: purple;
+}
+
+.input-container {
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 93%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: purple;
+}
+
+button {
+    background-color: purple;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: purple;
+}
+
+#error-message {
+    background-color: rgb(117, 0, 0);
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    display: none;
+}
+
+/* Outras regras CSS aqui */
+
+/* Transição para borda vermelha quando o nome de usuário é incorreto */
+#username:invalid {
+    border-color: rgb(223, 7, 154);
+    transition: border-color 0.3s;
+}
+
+/* Transição para borda vermelha quando a senha é incorreta */
+#password:invalid {
+    border-color: rgb(223, 7, 154);
+    transition: border-color 0.3s;
+}
+
+/* Transição para borda vermelha quando o formulário é enviado em branco */
+#username:invalid,
+#password:invalid {
+    border-color: rgb(223, 7, 154);
+    transition: border-color 0.3s;
+}
+
+/* Transição para borda verde quando o login é bem-sucedido */
+#username:valid, #password:valid {
+    border-color: rgb(0, 177, 100);
+    transition: border-color 0.3s;
+}
+
+/* Resto das regras CSS */
+
